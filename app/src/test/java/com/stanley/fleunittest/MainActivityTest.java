@@ -15,4 +15,25 @@ public class MainActivityTest {
         CalendarSettings setting = new CalendarSettings(0,0,0);
         assertEquals(MainActivity.calendarUtils(event, setting),"Full Day");
     }
+
+    @Test
+    public void halfDayEventOneTest() throws Exception {
+        CalendarEvent event = new CalendarEvent("Example Event Name",0,1);
+        CalendarSettings setting = new CalendarSettings(0,0,1);
+        assertEquals(MainActivity.calendarUtils(event, setting),"Half Day");
+    }
+
+    @Test
+    public void halfDayEventTwoTest() throws Exception {
+        CalendarEvent event = new CalendarEvent("Example Event Name",0,1);
+        CalendarSettings setting = new CalendarSettings(0,0,1);
+        assertEquals(MainActivity.calendarUtils(event, setting),"Half Day");
+    }
+
+    @Test
+    public void CustomEventTest() throws Exception {
+        CalendarEvent event = new CalendarEvent("Example Event Name",0,1);
+        CalendarSettings setting = new CalendarSettings(0,0,2);
+        assertEquals(MainActivity.calendarUtils(event, setting),"Custom");
+    }
 }
