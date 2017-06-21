@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void calendarUtils(CalendarEvent event, CalendarSettings settings) {
+    public static String calendarUtils(CalendarEvent event, CalendarSettings settings) {
         String resultMessage;
         String titleName;
         if (event.eventStart == settings.workDayStart && event.eventEnd == settings.workDayEnd ) {
@@ -102,11 +102,11 @@ public class MainActivity extends AppCompatActivity {
             titleName = event.eventName;
         }
 
-        new AlertDialog.Builder(this)
-                .setTitle(titleName + " RESULT")
-                .setMessage(resultMessage)
-                .show();
-
+//        new AlertDialog.Builder(this)
+//                .setTitle(titleName + " RESULT")
+//                .setMessage(resultMessage)
+//                .show();
+      return resultMessage;
     };
 
 }
