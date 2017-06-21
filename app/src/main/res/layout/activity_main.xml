@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:inputType="text"
         android:ems="10"
-        android:id="@+id/editTextWorkDayStart"
+        android:id="@+id/et_WorkDayStart"
         android:hint="Enter Work Start Time " />
 
 
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:inputType="text"
         android:ems="10"
-        android:id="@+id/editTextWorkDayEnd"
+        android:id="@+id/et_WorkDayEnd"
         android:hint="Enter Work End Time" />
 
 
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:inputType="text"
         android:ems="10"
-        android:id="@+id/editTextWorkDayMiddle"
+        android:id="@+id/et_WorkDayMiddle"
         android:hint="Enter Work Midday Time" />
 
     <View
@@ -59,14 +59,14 @@
         android:layout_height="wrap_content"
         android:inputType="text"
         android:ems="10"
-        android:id="@+id/editTextEventName"
+        android:id="@+id/et_EventName"
         android:hint="Enter Event Name" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:id="@+id/editTextEventStart"
+        android:id="@+id/et_EventStart"
         android:inputType="text"
         android:hint="Enter Event Start Time"/>
 
@@ -74,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:id="@+id/editTextEventEnd"
+        android:id="@+id/et_EventEnd"
         android:inputType="text"
         android:hint="Enter Event End Time" />
 
