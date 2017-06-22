@@ -11,7 +11,10 @@
     android:orientation="vertical"
     tools:context="com.stanley.fleunittest.MainActivity">
 
-
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:text="@string/instructions"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="5dp"
@@ -25,7 +28,7 @@
         android:inputType="text"
         android:ems="10"
         android:id="@+id/et_WorkDayStart"
-        android:hint="Enter Work Start Time " />
+        android:hint="@string/workDayStartHint" />
 
 
     <EditText
@@ -34,7 +37,7 @@
         android:inputType="text"
         android:ems="10"
         android:id="@+id/et_WorkDayEnd"
-        android:hint="Enter Work End Time" />
+        android:hint="@string/workDayEndHint" />
 
 
     <EditText
@@ -43,7 +46,7 @@
         android:inputType="text"
         android:ems="10"
         android:id="@+id/et_WorkDayMiddle"
-        android:hint="Enter Work Midday Time" />
+        android:hint="@string/workDayMiddayHint" />
 
     <View
         android:layout_width="match_parent"
@@ -60,7 +63,7 @@
         android:inputType="text"
         android:ems="10"
         android:id="@+id/et_EventName"
-        android:hint="Enter Event Name" />
+        android:hint="@string/enterEventNameHint" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -68,7 +71,7 @@
         android:ems="10"
         android:id="@+id/et_EventStart"
         android:inputType="text"
-        android:hint="Enter Event Start Time"/>
+        android:hint="@string/enterEventStartTimeHint"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -76,7 +79,7 @@
         android:ems="10"
         android:id="@+id/et_EventEnd"
         android:inputType="text"
-        android:hint="Enter Event End Time" />
+        android:hint="@string/enterEventEndTimeHint" />
 
     <View
         android:layout_width="wrap_content"
@@ -90,7 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_addToCalendar"
-        android:text="Add To Calendar"
+        android:text="@string/btn_AddToCalendar"
         android:layout_gravity="center"/>
 
 

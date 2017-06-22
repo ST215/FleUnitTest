@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">FleUnitTest</string>
+    <string name="instructions">Type calendar times in the following formats. i.e. 9:00AM / 12:41PM / 1:23AM</string>
+    <string name="workDayStartHint">Enter Work Start Time</string>
+    <string name="workDayEndHint">Enter Work End Time</string>
+    <string name="workDayMiddayHint">Enter Work Midday Time</string>
+    <string name="enterEventNameHint">Enter Event Name</string>
+    <string name="enterEventStartTimeHint">Enter Event Start Time</string>
+    <string name="enterEventEndTimeHint">Enter Event End Time</string>
+    <string name="btn_AddToCalendar">Add To Calendar</string>
 </resources>
