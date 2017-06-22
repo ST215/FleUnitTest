@@ -1,5 +1,6 @@
 package com.stanley.fleunittest;
 
+import android.content.Context;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 CalendarEvent event = new CalendarEvent(eventName.getText().toString(),
                         eventStartDate.getTime(),
                         eventEndDate.getTime());
-                calendarUtils(event, calendarSettings);
+                calendarUtils(event, calendarSettings, this);
 
             } catch (ParseException e) {
                 e.printStackTrace();
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public static String calendarUtils(CalendarEvent event, CalendarSettings settings) {
+    public static String calendarUtils(CalendarEvent event, CalendarSettings settings, Context context) {
         String resultMessage;
         String titleName;
         if (event.eventStart == settings.workDayStart && event.eventEnd == settings.workDayEnd ) {
@@ -102,10 +103,14 @@ public class MainActivity extends AppCompatActivity {
             titleName = event.eventName;
         }
 
-//        new AlertDialog.Builder(this)
-//                .setTitle(titleName + " RESULT")
-//                .setMessage(resultMessage)
-//                .show();
+        if (context != null) {
+
+            new AlertDialog.Builder(context)
+                    .setTitle(titleName + " RESULT")
+                    .setMessage(resultMessage)
+                    .show();
+        }
+
       return resultMessage;
     };
 
